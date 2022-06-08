@@ -16,7 +16,7 @@ function doPost (e) {
   lock.tryLock(10000)
 
   try {
-    var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+    var doc = SpreadsheetApp.openById(scriptProp.getProperty('pK58vz552bPyg_AGLOdG_BlBLruDnpBh5l2FRE5vJIA'))
     var sheet = doc.getSheetByName(sheetName)
 
     var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
